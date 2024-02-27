@@ -1,4 +1,4 @@
-TypeScript Practice:
+# TypeScript Practice
 
 initialize node project
 npm init -y
