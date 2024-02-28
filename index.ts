@@ -1,3 +1,14 @@
+/*
+index.ts
+justin bishop
+feb 27, 2024
+typescript practice
+*/
+
+//show how to use classes
+import { Person } from "./Person"
+
+//variables, functions and types
 const addNum = (a: number, b: number) => {
     return a + b;
 }
@@ -14,9 +25,8 @@ function greet(name: string) {
     console.log("Hello, " + name.toUpperCase() + "!!");
 }
 
-// it knows the type
+// example error showing wrong type
 //greet(34);
-
 
 //showing return types
 function getFavoriteNumber(): number {
@@ -37,7 +47,7 @@ function printName(obj: { first: string; last?: string }) {
 }
 // Both OK
 printName({ first: "Bob" });
-printName({ first: "Alice", last: "Alisson" });
+printName({ first: "Alice", last: "Alison" });
 
 //union types
 function printId(id: number | string) {
@@ -59,13 +69,8 @@ let str: string = "Hello, world!";
 // Boolean: Represents true or false values
 let isDone: boolean = false;
 
-// Null: Represents an intentional absence of any object value
-let n: null = null;
+//use the class
+//make object
+let person1 = new Person("John", "Wick");
 
-// Undefined: Represents a variable that has not been assigned a value
-let u: undefined = undefined;
-
-// Symbol: Represents unique identifiers
-const sym1: symbol = Symbol("key");
-const sym2 = Symbol("key"); // unique symbols
-
+console.log(person1.getFullName())
