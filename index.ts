@@ -50,4 +50,22 @@ function printId(id: number | string) {
     }
   }
 
-  
+  // Number: Represents numeric values
+let num: number = 10;
+
+// String: Represents textual data
+let str: string = "Hello, world!";
+
+// Boolean: Represents true or false values
+let isDone: boolean = false;
+
+// Null: Represents an intentional absence of any object value
+let n: null = null;
+
+// Undefined: Represents a variable that has not been assigned a value
+let u: undefined = undefined;
+
+// Symbol: Represents unique identifiers
+const sym1: symbol = Symbol("key");
+const sym2 = Symbol("key"); // unique symbols
+
