@@ -20,6 +20,6 @@ export class Person {
 
     //getters 
     getFullName() {
-        return `${this.firstName} ${this.lastName}`
+        return `${this.firstName} ${this.lastName}`;
     }
 }
